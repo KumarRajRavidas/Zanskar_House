@@ -215,7 +215,7 @@ width:160px;
 
 /*################### sec and rep #####################*/
   header {  
-  background-image:url(slide1.jpg);
+  background-image:url(image/slide3.jpg);
   background-size: cover;
   background-position: center;
   height:492px;
@@ -422,25 +422,25 @@ input[type=submit]:after {
 .footer_column {
   text-align: center;
   color:#a6a6a6;
-  height: 170px;
+  height: 200px;
   /*margin-top: 15px;*/
   float: left;
   width: 33.33%;
-  padding: 20px;
+  padding: 40px;
 }
 
 /* Clear floats after the columns */
-/*.footer_row:after {
+.footer_row:after {
   content: "";
   display: table;
   clear: both;
-}*/
+}
 
-.copyright{
-  margin-top: 187px;
+.copyright_row{
+  margin-top: 1px;
   color: white;
-  padding-top: 8px;
-  position: relative;
+  /*padding-top: 8px;*/
+  /*position: relative;*/
   height: 35px;
   width: 100%;
   text-align: center;
@@ -453,8 +453,10 @@ input[type=submit]:after {
   }
   .footer_row{
   margin-top: 15px;
+  }
 }
-}
+
+
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
@@ -463,25 +465,21 @@ input[type=submit]:after {
   }
   .footer_row{
   margin-top: 15px;
-}
+  }
 }
 /*listunstyled*/
 
 /*addresh*/
-
-.Adddersh a {
-  /*padding: 10px;*/
-  /*padding: 6px 8px 6px 16px;*/
+ul{
+  list-style: none;
+}
+.footer_column ul li a{
+  line-height: 26px;
+  padding: 2px;
   text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display:block;
+  font-size: 14px;
+  color: black;
 }
-
-.Adddersh a:hover {
-  color: #f1f1f1;
-}
-
 /*social media*/
 .fa {
   padding: 12px;
