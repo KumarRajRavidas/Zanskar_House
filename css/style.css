@@ -352,6 +352,7 @@ input[type=submit]:after {
 /*########################### About_container ##############*/
 /* Create four equal columns that floats next to each other */
 .about_column {
+  /*box-shadow: 4px 5px 7px 6px rgba(0,0,0,0.2);*/
   border: 10px solid white;
   margin: 50px;
   text-align: center;
@@ -362,6 +363,7 @@ input[type=submit]:after {
  
 }
 .about_column1 {
+  /*box-shadow: 4px 5px 7px 6px rgba(0,0,0,0.2);*/
   max-height: 300px;
   margin-top:50px;
   float: right;
@@ -401,7 +403,7 @@ input[type=submit]:after {
 
 
 /*########################## footer ########################*/
-.footer {
+/*.footer_footer {
   box-shadow: 1px 1px 8px  rgba(0,0,0,0.2);
   position: relative;
   height: 200px;
@@ -411,5 +413,102 @@ input[type=submit]:after {
   background-color: #ffece6;
   color: white;
   text-align: center;
+}*/
+
+/* Create four equal columns that floats next to each other */
+.footer_row{
+  margin-top: 15px;
+}
+.footer_column {
+  text-align: center;
+  color:#a6a6a6;
+  height: 170px;
+  /*margin-top: 15px;*/
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+/*.footer_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+.copyright{
+  margin-top: 187px;
+  color: white;
+  padding-top: 8px;
+  position: relative;
+  height: 35px;
+  width: 100%;
+  text-align: center;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .footer_column {
+    width: 33.33%;
+  }
+  .footer_row{
+  margin-top: 15px;
+}
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .footer_column {
+    width: 100%;
+  }
+  .footer_row{
+  margin-top: 15px;
+}
+}
+/*listunstyled*/
+
+/*addresh*/
+
+.Adddersh a {
+  /*padding: 10px;*/
+  /*padding: 6px 8px 6px 16px;*/
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display:block;
+}
+
+.Adddersh a:hover {
+  color: #f1f1f1;
+}
+
+/*social media*/
+.fa {
+  padding: 12px;
+  font-size: 40px;
+  width: 41px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
 /*##########################################################*/
