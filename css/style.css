@@ -9,6 +9,11 @@ body, html {
   height: 100%;
   margin: 0;
 }
+::selection {
+    background-color: transparent;
+    color:#006600;}
+
+
 /*######################## Header part ################################*/
 /* Create three equal columns that floats next to each other */
 * {
@@ -33,15 +38,20 @@ body, html {
   /*z-index: 1;*/
   /*background-color: #809fff;*/
   text-shadow: 6px 5px 11px #cc6600;
-  /*color: #cc6600;*/
+  color: #cc6600;
   /*width: 230px;*/
   margin: 1px;
-  height:75px;
-  text-align:center;
-  line-height: 85px;
-  font-size: 45px;
+  height:59px;
+  /*text-align:center;*/
+  line-height: 66px;
+  font-size: 28px;
 }
+
+/*img #logo{
+  width: 70px;
+}*/
 .flx-nav .circle img {
+  width: 56px;
   /*box-shadow: 2px 2px  #cc6600;*/
   position:relative;
   border-radius: 50%;
@@ -60,7 +70,7 @@ body, html {
 }
 
 .flx-nav .house-div{
-width:160px;
+width:98px;
 }
 
 
@@ -70,7 +80,7 @@ width:160px;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   background-color: #ffece6;
-  top:77px;
+  top:62px;
   position: fixed;
   width:100%;
   float: left;
@@ -104,7 +114,7 @@ width:160px;
 }
 
 
-/*####################### side show ############################*/
+/*####################### slide show ############################*/
 
 .mySlides {display: none}
 
@@ -119,7 +129,7 @@ width:160px;
 { 
   max-width:1000%;
   position: relative;
-  margin-top: 100px
+  margin-top: 86px;
   
 }
 
@@ -213,51 +223,257 @@ width:160px;
 
 
 
-/*################### sec and rep #####################*/
+/*################### people #####################*/
   header {  
   background-image:url(image/slide3.jpg);
   background-size: cover;
   background-position: center;
   height:492px;
    }
-
-.container1 {
-  background-color: white;
-  position: relative;
-  /*padding for space of inner content*/
-  /*padding: 100px;*/
-  margin: 100px; 
-}
-.column1 {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  grid-gap: 5px;
-  background-color: #ccffcc;
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+ 
+.section_first{
+  margin-top: 50px;
+  /*height: 500px;*/
+  background-color:  #b3ffb3;
 }
 
-.row1:after {
+/* section_first */
+.row_first{
+  /*margin-bottom: 800px;*/
+  background-color: #c2c2f0;
+  padding: 0 15px;
+  height: 300px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.row_first:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.row_first [class^="col-"]:not(:last-child) {
+    margin-right: 60px;
+}
+.row_first .col-1-of-3 {
+  background-color: green;
+  height: 300px;
+  width: calc((100% - 2 * 60px) / 3);
+}
+
+.row_first [class^="col-"] {
+    float: left;
+}
+
+/* Clear floats after the columns */
+.row_first:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ #first_{
+  height: 250px !important;
+ }
+ #third_{
+  height: 250px !important;
+ }
+ /******************/
+
+ /* section_second */
+
+ .section_second{
+  margin-top: 50px;
+  /*height: 500px;*/
+  background-color:  #b3ffb3;
+}
+
+
+.row_second{
+  /*margin-bottom: 800px;*/
+  background-color: #c2c2f0;
+  padding: 0 15px;
+  height: 300px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.row_second:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.row_second [class^="col-"]:not(:last-child) {
+    margin-right: 40px;
+}
+.row_second .col-1-of-4 {
+  background-color: green;
+  height: 300px;
+  width: calc((100% - 2 * 60px) / 4);
+}
+
+.row_second [class^="col-"] {
+    float: left;
+}
+
+/* Clear floats after the columns */
+.row_second:after {
   content: "";
   display: table;
   clear: both;
 }
 
-@media screen and (max-width: 600px) {
-  .column1 {
-    background-color: #ccffcc;
-    width: 100%;
-  }
+/**/
+.row_second_1 {
+  background-color: #c2c2f0;
+  padding: 0 15px;
+  height: 400px;
+  max-width: 350px;
+  margin: 30px auto 35px;
+  padding: 0 20px;
 }
+
+.row_second_1 .col-1-of-1{
+  background-color: green;
+  height: 400px;
+  /*width: calc((100% - 2 * 50px) / 1);*/
+}
+ /******************/
+
+  /* section_third */
+.section_third{
+  margin-top: 50px;
+  /*height: 500px;*/
+  background-color:  #b3ffb3;
+}
+
+
+.row_third{
+  /*margin-bottom: 800px;*/
+  background-color: #c2c2f0;
+  padding: 0 15px;
+  height: 250px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row_third:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.row_third [class^="col-"]:not(:last-child) {
+    margin-right: 35px;
+}
+.row_third .col-1-of-5 {
+  background-color: green;
+  height: 250px;
+  width: calc((100% - 2 * 70px) / 5);
+}
+
+.row_third [class^="col-"] {
+    float: left;
+}
+
+/* Clear floats after the columns */
+.row_third:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ /******************/
 /*####################################################*/
 
 
-/*################## facility #######################*/
+/*################## facility_css #######################*/
+.facility_container{
+  background-color:  #b3ffb3;
+}
+.row{
+  /*margin-bottom: 800px;*/
+  background-color: #c2c2f0;
+  padding: 0 15px;
+  height: 450px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.row:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.row [class^="col-"]:not(:last-child) {
+    margin-right: 60px;
+}
+.row .col-1-of-3 {
+  background-color: green;
+  height: 450px;
+  width: calc((100% - 2 * 60px) / 3);
+}
+
+.row [class^="col-"] {
+    float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*@media only screen and (max-width: 960px){
+.row [class^="col-"]:not(:last-child) {
+    margin: 0 auto;
+    margin-bottom: 60;
+  }
+}
+*/
+
+@media only screen and (max-width: 600pxm){
+.row:not(:last-child) {
+     margin-bottom: 60px; 
+  }
+}
+
+@media only screen and (max-width: 600px){
+ .row .col-1-of-3{
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+.row {
+    max-width: 400px;
+    padding: 0 30px;
+  }
+}  
+
+@media only screen and (max-width: 900px){
+.row {
+    max-width: 400px;
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+.row [class^="col-"] {
+    width: 100% !important;
+    margin-right:10px !important;
+ }
+} 
+  
+
+@media only screen and (max-width: 900px){
+ .row .col-1-of-3{
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+
 /*###################################################*/
 
 
-/*################contact########################*/
+/*################ contact ########################*/
 /* Style inputs */
 input[type=text], select, textarea {
   /*box-shadow: 1px 1px 8px  rgba(0,0,0,0.2);*/
@@ -418,16 +634,20 @@ input[type=submit]:after {
 /* Create four equal columns that floats next to each other */
 .footer_row{
   margin-top: 15px;
+
 }
 .footer_column {
+  position: relative;
+  /*float: none;*/
   text-align: center;
   color:#a6a6a6;
   height: 200px;
   /*margin-top: 15px;*/
   float: left;
   width: 33.33%;
-  padding: 40px;
+  padding: 20px;
 }
+
 
 /* Clear floats after the columns */
 .footer_row:after {
@@ -470,15 +690,41 @@ input[type=submit]:after {
 /*listunstyled*/
 
 /*addresh*/
-ul{
+/*ul{
   list-style: none;
-}
-.footer_column ul li a{
+}*/
+/*.footer_column a li{
+  display: inline-block;
   line-height: 26px;
   padding: 2px;
   text-decoration: none;
   font-size: 14px;
   color: black;
+}*/
+
+.footer_column #I{
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+.footer_column .sidebar{
+  height: 100px;
+}
+.footer_column .sidebar a {
+  text-decoration: none;
+  color: #818181;
+  display: block;
+}
+
+.footer_column .sidebar a:hover {
+  color: black;
+}
+.footer_column #A{
+  /*padding: 2px ;*/
+  text-decoration: none;
+  /*font-size: 20px;*/
+  color: #818181;
+  display:block;
 }
 /*social media*/
 .fa {
@@ -488,7 +734,7 @@ ul{
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
 }
 .fa:hover {
     opacity: 0.7;
