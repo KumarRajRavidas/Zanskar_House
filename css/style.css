@@ -728,9 +728,9 @@ input[type=submit]:after {
 }
 /*social media*/
 .fa {
-  padding: 12px;
-  font-size: 40px;
-  width: 41px;
+  padding: 7px;
+  /*font-size: 40px;*/
+  width: 32px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
