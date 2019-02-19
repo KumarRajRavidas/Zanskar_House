@@ -9,6 +9,7 @@ body, html {
   height: 100%;
   margin: 0;
 }
+
 ::selection {
     background-color: transparent;
     color:#006600;}
@@ -915,10 +916,7 @@ input[type=submit]:after {
 }*/
 
 /* Create four equal columns that floats next to each other */
-.footer_row{
-  margin-top: 150px;
 
-}
 .footer_column {
   position: relative;
   /*float: none;*/
