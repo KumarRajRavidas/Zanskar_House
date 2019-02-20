@@ -223,20 +223,50 @@ width:98px;
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+  header {  
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image/slide3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image/slide3.jpg);
+    background-size: cover;
+    /*background-position: center;*/
+    /*height: 100vh;*/
+    background-attachment: fixed;
+    /*background-image:url(image/slide3.jpg);*/
+    /*background-size: cover;*/
+    background-position: center;
+    height:650px;
+   }
+ .hero-text{
+    /*background-color: green;*/
+    position: absolute;
+    /*width: 1140px;*/
+    width: 52%;
+    top: 70%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+ }
+
+ .hero-text p{
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color:#bfbfbf;
+  border-left: 5px solid  #cc6600;
+  padding: 15px;
+ }
 /*####################################################*/
 
 
 
 
 /*################### people #####################*/
-  header {  
-  background-image:url(image/slide3.jpg);
-  background-size: cover;
-  background-position: center;
-  height:492px;
-   }
- 
-.section_first{
+
+
+
+.section_first {
   margin-top: 20px;
 }
 .section_second{
