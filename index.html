@@ -39,6 +39,9 @@
 
           <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
+            <!-- <div class="dotArea" style="text-align:center; position:absolute;">
+               <span class="dot" onclick="currentSlide(1)"></span>
+            </div> -->
             <img id="slide" src="image\slide_wall\slide4.jpg" style="width:100%">
             <div class="text">Caption Text</div>
           </div>
@@ -117,7 +120,7 @@
               <a id="I" href="#about">About</a>
         </div>
       </div>
-      <div class="copyright_row" style="background-color:#00001a; height: 20px;">
+      <div class="copyright_row" style="background-color: #00001a; height: 20px;">
             <div >Copyright 2019  Zanskar</div>
       </div>
           
@@ -154,6 +157,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+// setTimeout(currentSlide, 500);
+
 // #################################################################
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 // window.onscroll = function() {scrollFunction()};
