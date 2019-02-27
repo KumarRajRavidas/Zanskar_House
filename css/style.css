@@ -135,7 +135,7 @@ width:98px;
 { 
   max-width:1000%;
   position: relative;
-  margin-top: 77px;
+  margin-top: 76px;
   
 }
 
@@ -871,8 +871,10 @@ width:98px;
 }*/
 
 .flip-card-back {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffcc00), to( #cc6600));
+  background-image: linear-gradient(to right bottom, #ffcc00,  #cc6600);
   /*padding:10px;*/
-  background-color: #cc6600;
+  /*background-color: #cc6600;*/
   color: white;
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
@@ -963,18 +965,32 @@ input[type=submit]:after {
 }
 
 .row-con{
+  /*background:#ffcc66;*/
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffcc00), to( #cc6600));
+  background-image: linear-gradient(to right bottom, #ffcc00,  #cc6600);
   margin: 30px;
    box-shadow: 1px 1px 8px  rgba(0,0,0,0.2);
 }
 
 /* Create two columns that float next to eachother */
-.column-con {
+.column-con_first {
+  /*background-color: green;*/
    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
   float: left;
-  width: 50%;
+  width: 75% ;
   margin-top: 6px;
-  padding: 20px;
+  padding: 10px;
 }
+
+.column-con_second {
+  /*background-color: green;*/
+   /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  padding: 10px;
+}
+
 
 /* Clear floats after the columns */
 .row-con:after {
@@ -988,8 +1004,8 @@ input[type=submit]:after {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column-con, input[type=submit] {
+@media screen and (max-width: 900px) {
+  .column-con_first,.column-con_second, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
