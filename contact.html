@@ -6,7 +6,7 @@
   
   </style>
 	<title>contact</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" type="text/css" href="css/style.css">
 			<link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
       <link rel="stylesheet" 
@@ -53,7 +53,7 @@
         </div>
 
       <div class="column-con_second">
-        <form method = "post" action="send_mail.php">
+        <form id = "feedbackForm">  <!---action="send_mail.php">-->
             <label for="fname"><b>First Name</b></label>
             <input class="input-field" type="text" id="fname" name="firstname" placeholder="Your name..">
             <label for="lname"><b>Last Name</b></label>
@@ -62,11 +62,23 @@
             <label for="subject"><b>Subject</b></label>
             <textarea class="input-field" id="subject" name="subject" placeholder="Write something.." 
               style="height:180px"></textarea>
-            <input type="submit" value="Submit">
         </form>
+        <button onclick = "submitForm()" id = "myBtn">Submit</button>
         </div>
         </div>
     </div>
+      <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p><center>
+                <h2>
+                    Thanks for submitting! 
+                </h2><br>We will get back to you soon!
+            </center></p>
+          </div>
+        
+        </div>
       
 	
   <div class="footer_row">
@@ -102,7 +114,18 @@
 
     <!-- *********************************************************************************** -->
 <script>
-
+function submitForm(){
+  var modal = document.getElementById('myModal');
+  var btn = document.getElementById("myBtn");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  span.onclick = function() {
+    modal.style.display = "none";
+    location.reload();
+  }
+}
 
 </script>
 
