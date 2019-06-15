@@ -1,0 +1,150 @@
+#navbar {
+  overflow: hidden;
+  /*background-image: -webkit-gradient(linear, left top, right bottom, from(  #fff0b3), to( #8cff1a ));*/
+  /*background-image: linear-gradient(to right bottom,   #fff0b3, #8cff1a);*/
+  background-color: rgb(217, 217, 217);
+  /*padding: 90px 10px;*/
+  /*padding: 20px;*/
+  transition: 0.4s;
+  /*position: fixed;*/
+  width: 100%;
+  top: 0;
+  z-index: 120;
+}
+
+
+#navbar #logo  {
+  font-size: 45px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar  #logo1 {
+  font-size: 45px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar  #logo2 {
+  font-size: 45px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+ 
+ /**/
+.affix-nav{
+  position: fixed;
+}
+
+.affix-nav > div{
+  
+  text-align:center;
+  /*line-height: 65px;*/
+}
+/**/
+.flx-nav {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color:#ffece6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.flx-nav > div {
+  /*font-weight: bold; */
+  /*background-color: #809fff;*/
+  text-shadow: 6px 5px 11px #cc6600;
+  color: #cc6600;
+  /*width: 230px;*/
+  margin: 3px;
+  height:58px;
+  text-align:center;
+  /*line-height: 76px;*/
+
+  font-size: 45px;
+}
+.flx-nav .circle img {
+  width: 60px;
+  /*box-shadow: 2px 2px  #cc6600;*/
+  position:relative;
+  border-radius: 50%;
+  border: 3px solid #cc6600;
+  padding: 2px;
+  /*margin-top:%;*/
+}
+
+.flx-nav .circle{
+  position: relative;
+  float: none;
+  /*width:70px;*/
+  padding-top: 3px;
+  /*height: 60px;*/
+  /*border-radius: 50%;*/
+}
+
+/*.flx-nav .house-div{
+width:160px;
+}*/
+
+.menu{
+  background-color:rgb(217, 217, 217);
+  transition: 0.4s;
+  position: fixed;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  /*background-color: #ffece6;*/
+  top:73px;
+  /*position: fixed;*/
+  width:100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+
+.menu a:not(:last-child){
+  border-right: 2px solid black;
+}
+.menu a:hover{
+  /*border-bottom: 3px solid red;*/
+  /*background-color:  #994d00;*/
+}
+
+.menu a.active{
+  border-bottom: 3px solid red;
+  /*background-color:  #994d00;*/
+  color: black;
+}
+
+
+@media screen and (max-width: 600px) {
+ #navbar #logo  {
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.flx-nav > div{
+  height: 39px;
+}
+.menu {
+  transition: 0.4s;
+  top: 54px;
+  }
+#navbar  #logo1 {
+  width: 45px;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar  #logo2 {
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+  #navbar-right {
+    float: none;
+  }
+}

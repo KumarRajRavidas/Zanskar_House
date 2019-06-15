@@ -5,9 +5,6 @@ font-family: 'Aleo', serif;
 }
 
 body, html {
-  background-image: url("11.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-color:#e0e0d1;
   height: 100%;
   margin: 0;
@@ -23,22 +20,78 @@ body, html {
 * {
   box-sizing: border-box;
 }
+/*.header{
+  position: fixed;
+  text-align: center;
+}*/
+.flx-nav {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color:#e0e0d1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-
+.flx-nav > div {
+  /*z-index: 1;*/
+  /*background-color: #809fff;*/
+  text-shadow: 6px 5px 11px #cc6600;
+  color: #cc6600;
+  /*width: 230px;*/
+  margin: 1px;
+  height:58px;
+  /*text-align:center;*/
+  line-height: 62px;
+  font-size: 27px;
+}
 
 /*img #logo{
   width: 70px;
 }*/
-
-.main-nav{
-  transition: 0.4s;
-  margin-bottom: 1px;
-  margin-top: 0px;
-  margin-left: -40px;
+.flx-nav .circle img {
+  width: 49px;
+  /*box-shadow: 2px 2px  #cc6600;*/
+  position:relative;
+  border-radius: 50%;
+  border: 3px solid #cc6600;
+  padding: 2px;
+  /*margin-top:%;*/
 }
 
+.flx-nav .circle{
+  position: relative;
+  float: none;
+  /*width:100px;*/
+  padding-top: 3px;
+  /*height: 60px;*/
+  /*border-radius: 50%;*/
+}
+
+.flx-nav .house-div{
+  margin-right: 15px;
+width:98px;
+}
+
+
+
+.menu{
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #e0e0d1;
+  top:60px;
+  position: fixed;
+  width:100%;
+}
+.main-nav{
+  margin-bottom: 1px;
+  margin-top: 0px;
+  margin-left: -16px;
+}
 .main-nav  li a {
-  transition: 0.4s;
   margin-top: 0px;
   color: #333333;
   font-weight: bold;
@@ -99,7 +152,7 @@ body, html {
 }
 
 .mobile-nav-icon i{
-  margin-left: 20px;
+ 
   font-size: 170%;
   /*color: white;*/
 }
@@ -116,7 +169,7 @@ body, html {
     /*font-size: 11px*/
   }
   .menu{
-    top: 54px;
+
      /*background-color: rgb(224, 224, 209,0.5);*/
   }
 
@@ -161,7 +214,7 @@ body, html {
 { 
   max-width:1000%;
   position: relative;
-  margin-top: 93px;
+  margin-top: 73px;
   
 }
 
@@ -252,31 +305,17 @@ body, html {
 }
 
 
-/**/
-.header{
- /*  -webkit-clip-path: polygon(0 0, 100% 0, 100% 400px, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 400px, 0 100%);*/
-    /*-webkit-transform: skewY(-7deg); 
-    transform: skewY(-7deg);*/
-    height: 500px;
-    z-index: 1;
-  /*position: fixed;*/
-  /*text-align: center;*/
-}
-
-header {  
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/slide3.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/slide3.jpg);
-    /*background-size: cover;*/
+  header {  
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image/slide3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image/slide3.jpg);
+    background-size: cover;
     width: 100%;
     /*background-position: center;*/
     background-attachment: fixed;
-    background-repeat: no-repeat;
     /*background-size: cover;*/
     background-position: center;
     height:500px;
    }
-
  .hero-text{
     padding: 10px;
     /*text-align: right;*/
@@ -293,8 +332,7 @@ header {
  .hero-text p{
   float: right;
   font-size: 30px;
-  /*color:#bfbfbf;*/
-  color: black;
+  color:#bfbfbf;
   border-left: 5px solid  #cc6600;
   padding: 15px;
  }
@@ -303,16 +341,12 @@ header {
   .slideshow-container {
     margin-top:54px;
   }
-   
+   .hero-text p {
+    font-size: 15px
+  }
   .hero-text{
     top: 30%;
     left: 40%;
-  }
-}
-
-@media only screen and (max-width: 1000px){
-  .hero-text p {
-    font-size: 15px;
   }
 }
 /*####################################################*/
@@ -721,7 +755,7 @@ header {
 
 .card_rep {
   padding: 5px;
-  /*background-color: #e69900;*/
+  background-color: #e69900;
   margin: 0 auto;
   transition: 0.3s;
   width: 100%;
@@ -957,7 +991,7 @@ header {
 /* Style inputs */
 input[type=text], select, textarea {
   /*box-shadow: 1px 1px 8px  rgba(0,0,0,0.2);*/
-  /*border-radius: 5px;*/
+  border-radius: 5px;
   width: 100%;
   padding: 8px;
   border: 2px solid #ccc;
@@ -1016,9 +1050,9 @@ input[type=submit]:after {
 
 .row-con{
   /*background:#ffcc66;*/
-  /*background-image: -webkit-gradient(linear, left top, right bottom, from(#ffcc00), to( #cc6600));
-  background-image: linear-gradient(to right bottom, #ffcc00,  #cc6600);*/
-  margin: 10px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffcc00), to( #cc6600));
+  background-image: linear-gradient(to right bottom, #ffcc00,  #cc6600);
+  margin: 30px;
    box-shadow: 1px 1px 8px  rgba(0,0,0,0.2);
 }
 
@@ -1027,40 +1061,19 @@ input[type=submit]:after {
   /*background-color: green;*/
    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
   float: left;
-  width: 60% ;
-  /*margin-top: 6px;*/
-  /*padding: 5px;*/
+  width: 75% ;
+  margin-top: 6px;
+  padding: 10px;
 }
 
 .column-con_second {
-
-  height: 450px;
-  /*background-color: #d9d9d9;*/
+  /*background-color: green;*/
    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
   float: left;
-  width: 40%;
-  /*margin-top: 6px;*/
-  /*margin-left: 60px;*/
-  /*padding: 10px;*/
+  width: 25%;
+  margin-top: 6px;
+  padding: 10px;
 }
-
-.cont_column{
-  padding-left: 30px;
-  margin-top: 10px;
-  text-align: center;
-  width: 380px;
-  margin: 0 auto;
-}
-
-.cont_column a{
-  /*margin-bottom: 5px;*/
-  font-weight: bold;
-  font-size: 15px;
-  /*display: block;*/
-  text-decoration: none;
-  color: #993d00;
-}
-
 
 
 /* Clear floats after the columns */
@@ -1074,131 +1087,14 @@ input[type=submit]:after {
   border: 2px solid  #992600;
 }
 
-.button_class_contact{
-  margin-left: 20px;
-  /*background-color: green;*/
-  width: 150px;
-  margin:0 auto;
-}
-.button_class_contact button {
-    /*transition: 0.4s;
-    background-color: #408000;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.5;
-    position: fixed;
-    bottom: 86px;
-    right: 226px;
-    width: 100px;*/
-  background-color: #336600;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-/* The popup form - hidden by default */
-.form-popup {
-  transition: 0.4s;
-  display: none;
-  position: fixed;
-  bottom: 0px;
-  right: 10px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-
-/* Add styles to the form container */
-.form-container {
-  transition: 0.4s;
-  max-width: 350px;
-  /*width: 100%;*/
-  padding: 7px;
-  background-color:rgb(153, 51, 255,.9);
-
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #cc6600;
-  color: white;
-  padding: 8px 0px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  /*margin-bottom:10px;*/
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
   .column-con_first,.column-con_second, input[type=submit] {
     width: 100%;
     margin-top: 0;
-    margin-left: 0;
-  }
-  .vl{
-    display: none;
-  }
-  .open-button{
-    /*right: 190px;*/
-  }
-  .form-container{
-    max-width: 300px;
-    padding: 5px;
   }
 }
 
-.vl {
-  margin-right: 10px;
-  margin-top: 56px;
-  position: absolute;
-  left: 62%;
-  transform: translate(-50%);
-  border: 2px solid #b3b3b3;
-  height: 344px;
-}
-
-/* text inside the vertical line */
-.vl-innertext {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #b3b3b3;
-  /*border: 1px solid #ccc;*/
-  border-radius: 50%;
-  padding: 8px 10px;
-}
 
 
 /*########################### About_container ##############*/
@@ -1256,12 +1152,7 @@ input[type=submit]:after {
 
 /*########################## footer ########################*/
 
-.footer_row{
-  margin-top: 20px;
-  /*background-attachment: fixed;*/
-  /*position: fixed;*/
-  /*height: 200px;*/
-}
+
 .footer_column {
   position: relative;
   /*float: none;*/
@@ -1316,7 +1207,7 @@ input[type=submit]:after {
 
 .footer_column #I{
   text-decoration: none;
-  color: #b3b3b3;
+  color: black;
   display: block;
 }
 .footer_column .sidebar{
@@ -1367,147 +1258,6 @@ input[type=submit]:after {
   background: #125688;
   color: white;
 }
-
-.btn {
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: #663300;
-  color: black;
-  /*padding: 10px 40px;*/
-  font-size: 16px;
-  cursor: pointer;
-}
-
-
-
-/*****************complaint_form**************/
-
-/* Orange */
-.warning {
-  border-color: #ff9800;
-  color: orange;
-}
-
-.warning:hover {
-  background: #ff9800;
-  color: white;
-}
-
-.feedback_btn{
-  margin-top: 20px;
-}
-/* Full-width input fields */
-.container input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* Add a background color when the inputs get focus */
-.container input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for all buttons */
- button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 50%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity:1;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-  
-  padding: 60px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
-  padding-top: 50px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
-}
-
-/* Style the horizontal ruler */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
- 
-/* The Close Button (x) */
-/*.close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
-}*/
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 900px) {
-  .cancelbtn, .signupbtn {
-     width: 100%;
-  }
-
-  .modal-content{
-    width: 100%;
-  }
-}
-/***************/
 /*##########################################################*/
 
 /*################ Animated ##############*/
@@ -1520,7 +1270,6 @@ hr {
 .js--wp-7,
 .js--wp-8,
 .js--wp-9,
-.js--wp-10,
 .js--wp-f1,
 .js--wp-f2,
 .js--wp-f3,
@@ -1546,27 +1295,6 @@ hr {
 .js--wp-f2 .animated,
 .js--wp-f3 .animated,
 .js--wp-f4 .animated{
-  opacity: 1;
-}
-
-.open-button {
-  /*opacity: 0;*/
-  animation-duration: 10s;
-  animation-delay: 5s;
-  animation-iteration-count:5;
-}
-
-.js--wp-btn{
-  animation-duration: 10s;
-  animation-delay: 2s;
-  animation-iteration-count: 10;
-}
-
-.js--wp-btn{
-  /*opacity: 0;*/
-  /*animation-iteration-count: infinite;*/
-}
-.js--wp-btn .animated{
   opacity: 1;
 }
 /*########################################*/

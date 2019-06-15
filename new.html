@@ -140,7 +140,7 @@ font-family: 'Aleo', serif;
 
 #navbar {
   overflow: hidden;
-  background-color:  #ffe6e6;
+  background-color: white;
   /*padding: 90px 10px;*/
   /*padding: 20px;*/
   transition: 0.4s;
@@ -197,9 +197,10 @@ font-family: 'Aleo', serif;
   color: #cc6600;
   /*width: 230px;*/
   margin: 3px;
-  height:70px;
+  height:63px;
   text-align:center;
-  line-height: 65px;
+  /*line-height: 76px;*/
+
   font-size: 45px;
 }
 .flx-nav .circle img {
@@ -226,9 +227,12 @@ width:160px;
 }*/
 
 .menu{
+  background-color:white;
+  transition: 0.4s;
+  position: fixed;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background-color: #ffece6;
-  top:8px;
+  /*background-color: #ffece6;*/
+  /*top:53px;*/
   /*position: fixed;*/
   width:100%;
   float: left;
@@ -237,19 +241,23 @@ width:160px;
 }
 
 .menu a {
-  border-right: 2px solid #fe5c75;
-  margin-right: 10px;
+  transition: 0.4s;
+  /*font-size: 19px;*/
+  margin: 4px 4px;
   /*border-bottom: 3px solid transparent;*/
   background-color: transparent;
   color: black;
-  width: 100px;
+  /*width: 100px;*/
   text-align: center;
   /*display: block;*/
-  padding: 4px;
+  padding-right: 5px;
   /*margin: 10px;*/
   text-decoration: none;
-}
+} 
 
+.menu a:not(:last-child){
+  border-right: 2px solid black;
+}
 .menu a:hover{
   /*border-bottom: 3px solid red;*/
   /*background-color:  #994d00;*/
@@ -283,54 +291,45 @@ width:160px;
     <a href="#about">About</a>
   </div>
 </div> -->
- <div class="affix-nav">
+ <!-- <div class="affix-nav"> -->
     <div id="navbar" class="flx-nav">
-          <div id="logo" >ZANSKAR </div>
+          <div id="logo" style="margin-top: 12px;" >ZANSKAR </div>
           <div  class="circle">
             <img href="index.html" id="logo1" src="Fox2.png" alt="Avatar" >
           </div>
-          <div id="logo2" class="house-div">HOUSE </div>
+          <div id="logo2" class="house-div" style="margin-top: 12px;">HOUSE </div>
     </div>
-    <div class="menu">
-          <a href="#" class="#">Home</a>
-          <a href="#">People</a>
-          <a href="#">Facilities</a>
-          <a href="#">Achievement</a>
-          <a href="#">Reach us</a>
-          <a href="#">Feedback</a>
+    <div class="menu" id="menu_id">
+          <a id="a" href="#" class="#">Home</a>
+          <a id="a" href="#">Peopel</a>
+          <a id="a" href="#">Facility</a>
+          <a id="a" href="#">Achivement</a>
+          <a id="a" href="#">Contact</a>
+          <!-- <a href="#">Feedback</a> -->
       </div>
-  </div>
+  <!-- </div> -->
 
-<div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
-  <p><b>This example demonstrates how to shrink a navigation bar when the user starts to scroll the page.</b></p>
-  <p>Scroll down this frame to see the effect!</p>
-  <p>Scroll to the top to remove the effect.</p>
-  <p><b>Note:</b> We have also made the navbar responsive, resize the browser window to see the effect.</p>
-  <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
+ 
 
 <script>
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-// window.onscroll = function() {scrollFunction()};
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-//     // document.getElementById("navbar").style.padding = "1px";
-//      document.getElementById("navbar").style.height = "55px";
-//     // document.getElementById("logo1").style.fontSize = "25px";
-//     document.getElementById("logo1").style.width = "45px";
-//     document.getElementById("logo2").style.fontSize = "35px";
-//     document.getElementById("logo").style.fontSize = "35px";
-//   } else {
-//     // document.getElementById("navbar").style.padding = "20px";
-//      document.getElementById("navbar").style.height = "76px";
-//     document.getElementById("logo").style.fontSize = "45px";
-//     // document.getElementById("logo1").style.fontSize = "35px";
-//     document.getElementById("logo1").style.width = "65px";
-//     document.getElementById("logo2").style.fontSize = "45px";
-    
-//   }
-// } 
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.height = "55px";
+    document.getElementById("logo1").style.width = "49px";
+    document.getElementById("logo2").style.fontSize = "28px";
+    document.getElementById("logo").style.fontSize = "28px";  
+    document.getElementById("menu_id").style.top = "53px";    
+  } else {
+    document.getElementById("navbar").style.height = "76px";
+    document.getElementById("logo").style.fontSize = "45px";
+    document.getElementById("logo1").style.width = "65px";
+    document.getElementById("logo2").style.fontSize = "45px";
+    document.getElementById("menu_id").style.top = "75px";
+  }
+} 
 </script>
 
 </body>
