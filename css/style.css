@@ -742,6 +742,11 @@ header {
   max-width: 300px;
 }
 
+.container_rep h4{
+  margin-bottom:5px;
+  margin-top: 5px;
+}
+
 .container_rep .image {
   display: block;
   width: 100%;
@@ -1047,7 +1052,7 @@ input[type=submit]:after {
 .cont_column{
   padding-left: 30px;
   margin-top: 10px;
-  text-align: center;
+  /*text-align: center;*/
   width: 380px;
   margin: 0 auto;
 }
